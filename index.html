@@ -29,7 +29,7 @@
             <a class="font-13" href="#">
                 <img src="static/img/Cart.svg" alt="">
                 <p>Корзина</p>
-                <span class="count">3</span>
+                <span class="count" id="header-icons-count"></span>
             </a>
         </div>
         
@@ -41,186 +41,15 @@
             <div class="bot-24">
                 <div class="purpur-chek bot-16 space-between">
                     <div>
-                        <input type="checkbox" name="" id="all">
-                        <label for="all">Выбрать все</label>
+                        <input type="checkbox" name="" id="all-check">
+                        <label for="all-check">Выбрать все</label>
                     </div>
                     <button>
                         <img src="static/img/hide.svg" alt="">
                     </button>
                 </div>
                 <div class="shop-list" id="cart">
-                    <div class="buy-row space-between purpur-chek">
-                        <div class="space-between buy-row-block-1">
-                            <div class="space-between">
-                                <div class="buy-row-checkbox">
-                                    <input type="checkbox" name="" id="buy-1">
-                                    <label for="buy-1"></label>
-                                </div>
-                                <img src="static/img/buy/buy-1.svg" alt="">
-                            </div>
-                            <div class="buy-card">
-                                <div class="font-16">Футболка UZcotton мужская</div>
-                                <div class="specifications font-13">
-                                    <span>Цвет: белый</span><span>Размер: 56</span>
-                                </div>
-                                <div class="seller gray-font font-13">
-                                    <div class="bot-8">Коледино WB</div>
-                                    <div class="bot-8 space-between hide">
-                                        <span>OOO Вайлдберриз</span>
-                                        <img src="static/img/i.svg" alt="">
-                                        <div class="seller-placeholder font-13">
-                                            <p class="bold">OOO «МЕГАПРОФСТИЛЬ» </p>
-                                            <p class="bot-16">ОГРН: 5167746237148</p>
-                                            <p>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space-between buy-row-block-2">
-                            <div class="buy-count-row">
-                                <div class="buy-count space-between buy-count-row-items">
-                                    <button>
-                                        -
-                                    </button>
-                                    <input type="number" name="" id="">
-                                    <button>
-                                        +
-                                    </button>
-                                </div>
-                                <div class="remains buy-count-row-items">
-                                    Осталось 2 шт.
-                                </div>
-                                <div class="text-right like-trash buy-count-row-items">
-                                    <button class="like">
-                                        <input type="checkbox" name="" id="like-buy-1">
-                                        <label for="like-buy-1"></label>
-                                    </button>
-                                    <button class="trash">
-                                        <input type="checkbox" name="" id="trash-buy-1">
-                                        <label for="trash-buy-1"></label>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="buy-price">
-                                <div class="bold" id="price-buy-row-1">400 сом</div>
-                                <div class="gray-font font-13">
-                                    <span>200 сом</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="buy-row space-between purpur-chek">
-                        <div class="space-between buy-row-block-1">
-                            <div class="space-between">
-                                <div class="buy-row-checkbox">
-                                    <input type="checkbox" name="" id="buy-2">
-                                    <label for="buy-2"></label>
-                                </div>
-                                <img src="static/img/buy/buy-2.svg" alt="">
-                            </div>
-                            <div class="buy-card">
-                                <div class="font-16">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
-                                <div class="specifications font-13">
-                                    <span>Цвет: белый</span>
-                                </div>
-                                <div class="seller gray-font font-13">
-                                    <div class="bot-8">Коледино WB</div>
-                                    <div class="bot-8 space-between hide">
-                                        <span>OOO Вайлдберриз</span>
-                                        <img src="static/img/i.svg" alt="">
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space-between buy-row-block-2">
-                            <div class="buy-count-row">
-                                <div class="buy-count space-between buy-count-row-items">
-                                    <button>
-                                        -
-                                    </button>
-                                    <input type="number" name="" id="">
-                                    <button>
-                                        +
-                                    </button>
-                                </div>
-                                <div class="remains buy-count-row-items">
-                                    Осталось 2 шт.
-                                </div>
-                                <div class="text-right like-trash buy-count-row-items">
-                                    <button class="like">
-                                        <input type="checkbox" name="" id="like-buy-2">
-                                        <label for="like-buy-2"></label>
-                                    </button>
-                                    <button class="trash">
-                                        <input type="checkbox" name="" id="trash-buy-2">
-                                        <label for="trash-buy-2"></label>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="buy-price">
-                                <div class="bold" id="price-buy-row-2">600 сом</div>
-                                <div class="gray-font font-13">
-                                    <span>200 сом</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="buy-row space-between purpur-chek">
-                        <div class="space-between buy-row-block-1">
-                            <div class="space-between">
-                                <div class="buy-row-checkbox">
-                                    <input type="checkbox" name="" id="buy-3">
-                                    <label for="buy-3"></label>
-                                </div>
-                                <img src="static/img/buy/buy-3.svg" alt="">
-                            </div>
-                            <div class="buy-card">
-                                <div class="font-16">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </div>
-                                <div class="seller gray-font font-13">
-                                    <div class="bot-8">Коледино WB</div>
-                                    <div class="bot-8 space-between hide">
-                                        <span>OOO Вайлдберриз</span>
-                                        <img src="static/img/i.svg" alt="">
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space-between buy-row-block-2">
-                            <div class="buy-count-row">
-                                <div class="buy-count space-between buy-count-row-items">
-                                    <button>
-                                        -
-                                    </button>
-                                    <input type="number" name="" id="">
-                                    <button>
-                                        +
-                                    </button>
-                                </div>
-                                <div class="remains buy-count-row-items">
-                                    Осталось 2 шт.
-                                </div>
-                                <div class="text-right like-trash buy-count-row-items">
-                                    <button class="like">
-                                        <input type="checkbox" name="" id="like-buy-3">
-                                        <label for="like-buy-3"></label>
-                                    </button>
-                                    <button class="trash">
-                                        <input type="checkbox" name="" id="trash-buy-3">
-                                        <label for="trash-buy-3"></label>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="buy-price">
-                                <div class="bold" id="price-buy-row-3">800 сом</div>
-                                <div class="gray-font font-13">
-                                    <span>200 сом</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Тут итерируется массив из js -->
                 </div>
             </div>
             
@@ -398,13 +227,16 @@
         <div class="order ">
             <div class="total">
                 <div class="price bold space-between">
-                    <span>Итого</span><span class="text-right" id="total-price">7 000 000 сом</span>
+                    <span>Итого</span>
+                    <span class="text-right" id="total-price"></span>
                 </div>
                 <div class="price-dop space-between">
-                    <span>203 товара</span><span>7 000 000 сом</span>
+                    <span id="total-quantity">203 товара</span>
+                    <span id="old-price"></span>
                 </div>
                 <div class="price-dop space-between">
-                    <span>Скидка</span><span>- 200985 сом</span>
+                    <span>Скидка</span>
+                    <span id="discount"></span>
                 </div>
                 <div class="price-dop space-between"> 
                     <span>Доставка</span><span>Бесплатно</span>
@@ -448,7 +280,7 @@
                     </div>
                     <span class="top-8">Спишем оплату с карты при получении</span>
                 </div>
-                <button class="btn-order top-24 ">Заказать</button>
+                <button class="btn-order top-24 " id="button-order"></button>
                 <div class="font-13 agree-chek">
                     <input type="checkbox" checked="true" id="agree">
                     <label for="agree">Соглашаюсь с правилами пользования торговой площадкой и возврата</label>

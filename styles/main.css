@@ -6,6 +6,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.display-none{
+    display: none;
+}
 .space-between, .missing-between{
     display: flex;
     align-items: center;
@@ -225,9 +228,10 @@ input::-webkit-inner-spin-button {
     border-top: 1px solid lightgray;
 }
 .buy-row{
-    margin: 24px 0;
+    margin: 16px 0 24px 0;
+    align-items: flex-start;
 }
-.buy-row-block-1{
+.buy-row-block-1, .buy-row-block-2{
     align-items: flex-start;
 }
 .specifications{
@@ -290,11 +294,14 @@ input::-webkit-inner-spin-button {
     padding: 4px;
     box-sizing: border-box;
     width: 44px;
-    text-align: right;
+    text-align:center;
 }
 .remains{
     color: rgba(255, 59, 48, 1);
     margin: 8px 0;
+}
+.like-trash{
+    margin-top: 8px;
 }
 .like-trash label{
     padding: 0;
@@ -339,6 +346,7 @@ input::-webkit-inner-spin-button {
     margin-left: 16px;
     text-align: right;
     height: 100px;
+    min-width: 9vw;
 }
 .buy-price .bold{
     font-size: 20px;
@@ -588,9 +596,15 @@ input::-webkit-inner-spin-button {
         position: absolute;
         top: 0;
         left: 74px;
+        text-align: left;
+        
+    }
+    .buy-price .bold{
+        font-size: 16px;  
     }
     .buy-price *{
         display: inline;
+        letter-spacing: 0px;
     }
     .buy-count-row{
         display: flex;
@@ -602,8 +616,10 @@ input::-webkit-inner-spin-button {
     }
     .buy-card{
         margin-top: 28px;
+
     }
     .buy-card .font-16{
+        font-size: 14px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
