@@ -698,6 +698,9 @@ input::-webkit-inner-spin-button {
 
 
 @media (min-width:0px) and (max-width:800px){
+    *{
+        font-family: 'Segoe UI';
+    }
     .body-cart, .order{
         width: 100%;
     }
@@ -850,6 +853,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-device-width: 600px){
+    *{
+        font-family: 'Segoe UI';
+    }
     .body-cart, .order{
         width: 100%;
     }
