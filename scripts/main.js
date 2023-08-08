@@ -109,7 +109,9 @@ let cartBlock = document.querySelector('#cart');
 // вывод товаров в корзину
 function createCart(){
     const headerIconsCount = document.getElementById('header-icons-count');
+    const missintTotalBuy = document.getElementById('missint-total-buy');
     headerIconsCount.innerHTML = products.length;
+    missintTotalBuy.innerHTML = products.length;
     cartBlock.innerHTML = "";
     for(let i = 0; i < products.length; i++){
         let buyRow = document.createElement('div');
@@ -993,15 +995,31 @@ for (let i = 0; i < inputForm.length; i++){
         noselects[i].classList.add('label-filled');
         
     });
-    inputForm[i].addEventListener('input', () => {
-        errPlaceholders[i].style.display = "none";
-    });
 
-    inputForm[i].addEventListener('blur', () => {
+    inputForm[i].addEventListener('mouseleave', () => {
         validatoin ();
-        if(!inputForm[i].value){
+        if(!inputForm[i].value && inputForm[i] !== document.activeElement){
             noselects[i].classList.remove('label-filled');
         }
     });
 }
 
+let buttonOrder = document.getElementById('button-order');
+buttonOrder.addEventListener('click', ()=>{
+    let success = true;
+    function showPlac(i){
+        errPlaceholders[i].style.display = "block";
+        inputForm[i].classList.add("err-input");
+        document.getElementById('inn-placeholder').style.display = "none"
+    };
+    inputForm.forEach((input, index) => {
+        if (!input.value){
+            showPlac(index);
+            success = false;
+            inputForm[0].scrollIntoView();
+        }
+    });
+    if (success){
+        alert("Успех!");
+    }
+})
