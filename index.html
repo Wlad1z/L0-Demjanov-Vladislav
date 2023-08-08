@@ -38,13 +38,19 @@
     <div class="cart space-between">
         <div class="body-cart">
             <h3>Корзина</h3>
-            <div class="bot-24">
-                <div class="purpur-chek bot-16 space-between">
+            <div class="bot-16">
+                <div class="purpur-chek cart-header space-between">
                     <div>
-                        <input type="checkbox" name="" id="all-check">
-                        <label for="all-check">Выбрать все</label>
+                        <div class="hide-divs">
+                            <input type="checkbox" checked name="" id="all-check">
+                            <label for="all-check">Выбрать все</label>
+                        </div>
+                        <div class="hide-divs display-none font-16">
+                            <span class="total-quantity"></span> · <span id="cost-buys-in-cart"></span>
+                        </div>
                     </div>
-                    <button>
+                    
+                    <button class="hide-button">
                         <img src="static/img/hide.svg" alt="">
                     </button>
                 </div>
@@ -53,127 +59,48 @@
                 </div>
             </div>
             
-            <div class="missing purpur-chek">
+            <div class="missing " >
                 <div class="missing-between">
                     <h4>Отсутствуют · 3 товара</h4>
-                    <button>
+                    <button class="hide-button">
                         <img src="static/img/hide.svg" alt="">
                     </button>
                 </div>
                 
-                <div class="shop-list gray-font">
-                    <div class="buy-row space-between">
-                        <div class="space-between width-40">
-                            <img src="static/img/buy/buy-2.svg" alt="">
-                            <div class="buy-card">
-                                <div class="font-16">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
-                                <div class="specifications font-13">
-                                    <span>Цвет: прозрачный</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-right like-trash width-40">
-                            <button class="like">
-                                <input type="checkbox" name="" id="missing-like-buy-1">
-                                <label for="missing-like-buy-1"></label>
-                            </button>
-                            <button class="trash">
-                                <input type="checkbox" name="" id="missing-trash-buy-1">
-                                <label for="missing-trash-buy-1"></label>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="buy-row space-between">
-                        <div class="space-between width-40">
-                            <img src="static/img/buy/buy-1.svg" alt="">
-                            <div class="buy-card">
-                                <div class="font-16">Футболка UZcotton мужская</div>
-                                <div class="specifications font-13">
-                                    <span>Цвет: прозрачный</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-right like-trash width-40">
-                            <button class="like">
-                                <input type="checkbox" name="" id="missing-like-buy-2">
-                                <label for="missing-like-buy-2"></label>
-                            </button>
-                            <button class="trash">
-                                <input type="checkbox" name="" id="missing-trash-buy-2">
-                                <label for="missing-trash-buy-2"></label>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="buy-row space-between">
-                        <div class="space-between width-40">
-                            <img src="static/img/buy/buy-3.svg" alt="">
-                            <div class="buy-card">
-                                <div class="font-16">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,Faber-Castell </div>
-                            </div>
-                        </div>
-                        <div class="text-right like-trash width-40">
-                            <button class="like">
-                                <input type="checkbox" name="" id="missing-like-buy-3">
-                                <label for="missing-like-buy-3"></label>
-                            </button>
-                            <button class="trash">
-                                <input type="checkbox" name="" id="missing-trash-buy-3">
-                                <label for="missing-trash-buy-3"></label>
-                            </button>
-                        </div>
-                    </div>
+                <div class="shop-list gray-font purpur-chek" id="missing">
+                    <!-- Тут итерируется массив из js -->
                 </div>
             </div>
 
             <div class="white-bac cart-delivery bot-16">
                 <div class="space-between bot-16">
                     <h4>Способ доставки</h4>
-                    <a href="#">Изменить</a>
+                    <span class="button-change change-delivery ">Изменить</span>
                 </div>
                 <div class="small-dispaly-delivery">
-                    <div class="bot-16 flex-start block">
-                        <div class="width-13 font-bold-16">Пункт выдачи</div>
-                        <div class="point">
+                    <div class="bot-16 flex-start block ">
+                        <div class="width-13 font-bold-16" id="adress-point-cart">Пункт выдачи</div>
+                        <div class="point delivery-row" id="point">
                             <div class="bot-8">Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
-                            <div class="font-13">Ежедневно с 10 до 21 </div>
+                            <div class="font-13"><span class="rating"> 4,99</span>Ежедневно с 10 до 21 </div>
                         </div>
                     </div>
                     <div class="bot-16 flex-start block">
                         <div class="width-13 font-bold-16 bot-8">Стоимость доставки</div>
                         <div>Бесплатно</div>
                     </div>
-                    <div class="bot-16 flex-start block">
-                        <div class="width-13 font-bold-16 bot-8">5—6 февраля</div>
-                        <div class="delivery-buy flex-start ">
-                            <div class="pos-relative">
-                                <img src="static/img/buy/buy-1.svg" alt="">
-                                <span class="count">3</span>
-                            </div>
-                            <div class="pos-relative">
-                                <img src="static/img/buy/buy-2.svg" alt="">
-                                <span class="count">3</span>
-                            </div>
-                            <div class="pos-relative">
-                                <img src="static/img/buy/buy-3.svg" alt="">
-                                <span class="count">3</span>
-                            </div>
-
-                        </div>
+                    <div id="delivery-date">
+                        <!-- тут выводится массив -->
                     </div>
-                    <div class="bot-16 flex-start block">
-                        <div class="width-13 font-bold-16 bot-8">7—8 февраля</div>
-                        <div class="flex-start">
-                                <div class="pos-relative delivery-buy">
-                                    <img src="static/img/buy/buy-2.svg" alt="">
-                                <span class="count">3</span>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="delivery-reverse space-between">
                     <img src="static/img/price shipping.svg" alt="">
                     <div class="font-13">
                         Обратная доставка товаров на склад при отказе — <span class="green">бесплатно</span>
+                    </div>
+                    <div class="placeholder-delivery white-bac font-13 display-none" >
+                        Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
                     </div>
                 </div>
             </div>
@@ -181,12 +108,10 @@
             <div class="pay-buy cart-delivery white-bac bot-16">
                 <div class="space-between bot-16">
                     <h4>Способ оплаты</h4>
-                    <a href="#">Изменить</a>
+                    <span class="button-change change-pay-cart">Изменить</span>
                 </div>
-                <div class="flex-start pay-buy-cart bot-16">
-                    <img src="static/img/pay/mir.svg" alt="">
-                    <span>1324 1*** **** 1324</span>
-                    <span>01/10</span>
+                <div class="flex-start  pay-buy-cart bot-16">
+                    <!-- cюда выводится карта -->
                 </div>
                 <div class="font-13 gray-font">
                     Спишем оплату с карты при получении
@@ -194,33 +119,37 @@
             </div>
 
             <div class="cart-delivery white-bac bot-24">
-                <div class="bot-16">
+                <div class="bot-24">
                     <h4>Получатель</h4>
                 </div>
-                <div class="addressee gray-font">
-                    <div class="width-40 pos-relative">
-                        <label for="name" class="noselect">Имя</label>
-                        <input type="text" id="name">
+                <form action="" class="adresse gray-font">
+                    <div class="width-40 pos-relative bot-16">
+                        <label for="input-form-name" class="noselect label-float">Имя</label>
+                        <input type="text" id="input-form-name" class="input-form" required >
+                        <span class="font-13 err-placeholder">Укажите имя</span>
                     </div>
-                    <div class="width-40 pos-relative">
-                        <label for="surname" class="noselect">Фамилия</label>
-                        <input type="text" id="surname">
-                        
-                    </div>
-                    <div class="width-25 pos-relative">
-                        <label for="email" class="noselect">Почта</label>
-                        <input type="email" id="email" pattern=".+@globex\.сом" size="30" required>
+                    <div class="width-40 pos-relative bot-16">
+                        <label for="input-form-surname" class="noselect label-float">Фамилия</label>
+                        <input type="text" id="input-form-surname" class="input-form" required>
+                        <span class="font-13 err-placeholder">Введите фамилию</span>
                     </div>
                     <div class="width-25 pos-relative">
-                        <label for="phone" class="noselect">Телефон</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <label for="input-form-email" class="noselect label-float">Почта</label>
+                        <input type="email" id="input-form-email" required class="input-form">
+                        <span class="font-13 err-placeholder">Проверьте адрес электронной почты</span>
                     </div>
                     <div class="width-25 pos-relative">
-                        <label for="inn" class="noselect">ИНН</label>
-                        <input type="number" id="inn" name="inn" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
-                        <span class="font-13">Для таможенного оформления</span>
+                        <label for="input-form-phone" class="noselect label-float">Телефон</label>
+                        <input inputmode="tel" maxlength="30" id="input-form-phone" name="phone" required class="input-form">
+                        <span class="font-13 err-placeholder">Формат: +7 999 999 99 99</span>
                     </div>
-                </div>
+                    <div class="width-25 pos-relative">
+                        <label for="input-form-inn" class="noselect label-float">ИНН</label>
+                        <input type="number" id="input-form-inn" name="inn" required class="input-form">
+                        <span class="font-13" id="inn-placeholder">Для таможенного оформления</span>
+                        <span class="font-13 err-placeholder">Проверьте ИНН</span>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -231,7 +160,7 @@
                     <span class="text-right" id="total-price"></span>
                 </div>
                 <div class="price-dop space-between">
-                    <span id="total-quantity">203 товара</span>
+                    <span class="total-quantity"></span>
                     <span id="old-price"></span>
                 </div>
                 <div class="price-dop space-between">
@@ -243,14 +172,14 @@
                 </div>
             </div>
             <div class="delivery top-24">
-                <div class="address hide">
+                <div class="address  hide">
                     <div class="space-between">
-                        <span class="bold">Доставка в пункт выдачи</span>
-                        <button>
+                        <span class="bold" id="adress-point-order">Доставка в пункт выдачи</span>
+                        <button class="change-delivery">
                             <img src="static/img/edit.svg" alt="">
                         </button>
                     </div>
-                    <div class="delivery-dop">Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+                    <div class="delivery-dop delivery-row">Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
                     <div class="delivery-dop ">
                         <span class="date">5–8 фев</span>
                     </div>
@@ -260,18 +189,20 @@
                     <div class="font-13">
                         Обратная доставка товаров на склад при отказе — <span class="green">бесплатно</span>
                     </div>
+                    <div class="placeholder-delivery white-bac font-13 display-none">
+                        Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
+                    </div>
                 </div>
             </div>
             <div class="pay top-24">
                 <div class="space-between hide">
                     <span class="bold">Оплата картой</span>
-                    <button>
+                    <button class="change-pay-cart">
                         <img src="static/img/edit.svg" alt="">
                     </button>
                 </div>
-                <div class="flex-start hide">
-                    <img src="static/img/pay/mir.svg" alt="">
-                    <span>1324 1*** **** 1324</span>
+                <div class="flex-start hide pay-buy-cart">
+                    <!-- cюда выводится карта -->
                 </div>
                 <div class="gray-back font-13 purpur-chek">
                     <div class="bot-8">
@@ -293,6 +224,55 @@
         <p>© 2022  ООО «Товары и точка»</p>
     </div>
 
+    <div class="modal purpur-chek display-none" id="modal-block">
+        <div id="modal-pay" class="display-none">
+            <div>
+                <div class="space-between bot-8">
+                    <span class="bold">Оплата картой</span>
+                    <button class="close-modal">
+                        <img src="static/img/close.svg" alt="">
+                    </button>
+                </div>
+                <div id="modal-pay-list" class="bot-16">
+                    <!-- Тут итерируется массив из js -->
+                </div>
+            </div>
+            <button class="btn-order" id="button-change-cart-pay">Выбрать</button>
+        </div>
+        <div id="modal-delivery" class="display-none">
+            <div>
+                <div class="space-between bot-8">
+                    <span class="bold">Способ доставки</span>
+                    <button class="close-modal">
+                        <img src="static/img/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="delivery-buttton space-between bot-16">
+                    <button class="way-delivery-buttton">В пункт выдачи</button>
+                    <button class="way-delivery-buttton">Курьером</button>
+                </div>
+                <div id="modal-delivery-list" class="bot-16 ">
+                    <div class="courier" >
+                        <div class="font-13">
+                            Мои адреса
+                        </div>
+                        <div id="courier">
+                            <!-- Тут итерируется массив из js -->
+                        </div>
+                    </div>
+                    <div class="points-delivery">
+                        <div class="font-13">
+                            Пункты выдачи
+                        </div>
+                        <div id="points-delivery">
+                            <!-- Тут итерируется массив из js -->
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <button class="btn-order" id="button-change-delivery">Выбрать</button>
+        </div>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>
