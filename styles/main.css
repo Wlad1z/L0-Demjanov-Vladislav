@@ -875,7 +875,7 @@ input::-webkit-inner-spin-button {
         background: none;
         border: none;
         box-shadow: none;
-        padding: 0 24px 24px 24px;
+        padding: 24px;
     }
     .order{
         background: none;
