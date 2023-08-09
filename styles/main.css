@@ -709,6 +709,9 @@ input::-webkit-inner-spin-button {
     .cart .body-shop-list, .logo, .cart h3, .missing{
         padding: 0 24px;
     }
+    .header{
+        padding: 0;
+    }
     .order{
         background: none;
         border: none;
@@ -867,6 +870,9 @@ input::-webkit-inner-spin-button {
     }
     .cart {
         padding: 24px 0 0 0 ;
+    }
+    .header{
+        padding: 0;
     }
     .cart .body-shop-list, .logo, .cart h3, .missing{
         padding: 0 24px;
