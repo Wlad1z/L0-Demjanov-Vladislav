@@ -518,8 +518,8 @@ function createCart(){
                         <div class="flex-start" id="wrapper-delivery-row-0">
 
                         <div>
-                 `
-            row.className = 'bot-16 small-display-delivery-row flex-start block';
+                `
+            row.className = 'bot-16 flex-start block';
             deliveryDate.appendChild(row);
             document.getElementById("order-date").innerHTML = storages[0].data.start.date + "—"+ storages[0].data.end.date +" "+ storages[0].data.end.month;
         } else {
