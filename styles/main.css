@@ -698,7 +698,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-@media (min-width:0px) and (max-width:800px){
+@media (max-width:800px){
     .body-cart, .order{
         width: 100%;
     }
@@ -853,7 +853,7 @@ input::-webkit-inner-spin-button {
     
 }
 
-@media (max-width:480px){
+@media (max-width:300px){
     .body-cart, .order{
         width: 100%;
     }
