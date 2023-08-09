@@ -284,8 +284,10 @@ function createCart(){
         function buttonOrderCreate () {
             if (immediately.checked){
                 buttonOrder.innerHTML = "Оплатить " + summ.toLocaleString() + " cом";
+                document.getElementById('pay-placeholder').classList.remove("display-none")
             } else {
-                buttonOrder.innerHTML = "Заказать"
+                buttonOrder.innerHTML = "Заказать";
+                document.getElementById('pay-placeholder').classList.add("display-none")
             }
         }
         buttonOrderCreate ();
@@ -519,6 +521,7 @@ function createCart(){
                  `
             row.className = 'bot-16 small-display-delivery-row flex-start block';
             deliveryDate.appendChild(row);
+            document.getElementById("order-date").innerHTML = storages[0].data.start.date + "—"+ storages[0].data.end.date +" "+ storages[0].data.end.month;
         } else {
             row = document.createElement("div");
             row.innerHTML = `
@@ -540,6 +543,7 @@ function createCart(){
                 `
             row0.className = 'bot-16 flex-start block';
             deliveryDate.appendChild(row0);
+            document.getElementById("order-date").innerHTML = storages[0].data.start.date + "—"+ storages[1].data.end.date +" "+ storages[1].data.end.month;
         }
         
         for (let j = 0; j < products.length; j++){
