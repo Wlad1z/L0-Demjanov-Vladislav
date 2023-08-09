@@ -370,7 +370,6 @@ function createCart(){
     inputs.forEach((input) => {
         input.addEventListener("input", currentCheckInput);
         input.addEventListener("input", currentDateDelivery);
-        
     });
 
     buyCountContainers.forEach((container) => {
