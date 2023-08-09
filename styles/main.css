@@ -706,8 +706,12 @@ input::-webkit-inner-spin-button {
     .cart {
         padding: 24px 0 0 0 ;
     }
-    .cart .body-shop-list, .logo, .cart h3, .missing{
+    .cart .body-shop-list, .cart h3, .missing{
         padding: 0 24px;
+    }
+    .logo{
+        padding: 0 12px;
+
     }
     .header{
         padding: 0;
@@ -874,8 +878,11 @@ input::-webkit-inner-spin-button {
     .header{
         padding: 0;
     }
-    .cart .body-shop-list, .logo, .cart h3, .missing{
+    .cart .body-shop-list, .cart h3, .missing{
         padding: 0 24px;
+    }
+    .logo{
+        padding: 0 12px
     }
     .cart .order{
         background: none;
