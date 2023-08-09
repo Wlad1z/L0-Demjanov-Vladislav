@@ -699,15 +699,183 @@ input::-webkit-inner-spin-button {
 }
 
 
-
-
-
-@media only screen and (max-width: 600px){
-    body{
-        font-size: 16px;
-    }
+@media (max-width:800px){
     .body-cart, .order{
         width: 100%;
+    }
+    .cart {
+        padding: 24px 0 0 0 ;
+    }
+    .cart .body-shop-list, .logo, .cart h3, .missing{
+        padding: 0 24px;
+    }
+    .order{
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0 24px 24px 24px;
+    }
+    .order .bold{
+        font-size: 20px;
+    }
+    .order .top-24{
+        margin-top: 12px;
+    }
+    .order .gray-back{
+        background: #F0ECF4;
+    }
+    .hide, .hide *{
+        display: none; 
+    }
+    .header{
+        height: 56px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo button{
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+    }
+    .logo p{
+        width: auto;
+        letter-spacing: 0em;
+    }
+    .search, .buy-card, .missing .space-between{
+        width: auto;
+    }
+    .cart, .small-display-button, .small-display-button img{
+        display: block;
+    }
+    .shop-list .buy-row{
+        position: relative;
+        display: block;
+    }
+    .buy-row-block-1{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .buy-row-block-2{
+        justify-content: center;
+        display: block;
+    }
+    .buy-row-checkbox{
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+    .buy-price{
+        position: absolute;
+        top: 0;
+        left: 74px;
+        text-align: left;
+        
+    }
+    .buy-price .bold{
+        font-size: 16px;  
+    }
+    .buy-price *{
+        display: inline;
+        letter-spacing: 0px;
+    }
+    .discount{
+        display: none;
+    }
+    .buy-count-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .buy-count{
+        height: auto;
+    }
+    .buy-card{
+        margin-top: 28px;
+
+    }
+    .buy-card .font-16{
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+    }
+    .remains{
+        font-size: 13px;
+    }
+    .missing .buy-row{
+        border-bottom: 1px solid lightgrey;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 16px;
+    }
+    .missing .like-trash{
+        height: auto;
+        width: auto;
+        text-align: right;
+        margin-bottom: 8px;
+    }
+    .missing .buy-card{
+        margin: 0 0 0 20px;
+    }
+    .cart-delivery h4{
+        font-size: 18px;
+    }
+    .small-dispaly-delivery .block{
+        display: block;
+    }
+    .small-dispaly-delivery .width-13{
+        width: auto;
+    }
+    .small-dispaly-delivery .block img{
+        margin: 0 8px 0 0;
+    }
+    .small-dispaly-delivery .small-display-delivery-row{
+        display: flex;
+    }
+    .pos-relative .count{
+        right: 0;
+    }
+    .pay-buy-cart *, .like-trash button{
+        margin: 0;
+    }
+    .pay-buy-cart{
+        font-size: 13px;
+        justify-content: space-between;
+    }
+    .adresse .width-40, .adresse .width-25{
+        width: 100%;
+    }
+    .adresse .width-25{
+        margin-bottom: 16px;
+    }
+    #modal-pay, #modal-delivery{
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (max-device-width: 600px){
+    .body-cart, .order{
+        width: 100%;
+    }
+    .cart {
+        padding: 24px 0 0 0 ;
+    }
+    .cart .body-shop-list, .logo, .cart h3, .missing{
+        padding: 0 24px;
+    }
+    .order{
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0 24px 24px 24px;
     }
     .order{
         background: none;
