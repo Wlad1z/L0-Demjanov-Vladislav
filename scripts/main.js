@@ -102,8 +102,6 @@ const products = [
 
 ];
 
-console.log(products)
-
 
 let cartBlock = document.querySelector('#cart');
 // вывод товаров в корзину
@@ -430,22 +428,18 @@ function createCart(){
             const liked = likeButtons[i].checked;
             likeButtonsMissing[i].checked = liked;
             products[i].like = liked;
-            console.log(products);
         })
         likeButtonsMissing[i].addEventListener('change', () => {
             const liked = likeButtonsMissing[i].checked;
             likeButtons[i].checked = liked;
             products[i].like = liked;
-            console.log(products);
         })
         trashButtons[i].addEventListener('change', () => {
             products.splice(i,1);
-            console.log(products);
             createCart();
         })
         trashButtonsMissing[i].addEventListener('change', () => {
             products.splice(i,1);
-            console.log(products);
             createCart();
         })
     }
