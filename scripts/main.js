@@ -62,8 +62,8 @@ const products = [
         ],
         like: true,
         price: {
-            current: 600,
-            oldPrice: 1000,
+            current: 60000,
+            oldPrice: 100000,
             discount: 10
         },
         getTotalQuantity() {
@@ -250,6 +250,11 @@ function createCart(){
                 remains = document.getElementById(`quantity-remains-buy-${j}`),
                 checkBuy = document.getElementById(`check-buy-${j}`);
             currentPriceBuy.innerHTML = ((price - price/100*discountSize) * quantity).toLocaleString() + " сом";
+            if(((price - price/100*discountSize) * quantity) < 1000000){
+                currentPriceBuy.style.fontSize = '20px';
+            } else {
+                currentPriceBuy.style.fontSize = '16px';
+            }
             oldPriceBuy.innerHTML = (oldPrice * quantity).toLocaleString() + " сом";
             costBuysInCartsumm += ((price - price/100*discountSize) * quantity)
             // считается количество товара в корзине
